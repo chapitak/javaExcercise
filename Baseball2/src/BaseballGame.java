@@ -8,23 +8,20 @@ public class BaseballGame {
 	
 	public static void main(String[] args) {
 		//컴퓨터 숫자 만들기
-		int targetNumber = generateComputerNumber();
-		//menu();
+		List<Integer> computerNumber = generateComputerNumber();
+		
+		List<Integer> userNUmber = getUserNumber();
 		//System.out.println(sc);
 	}
-	private static int generateComputerNumber() {
+	private static List<Integer> generateComputerNumber() {
 		List<Integer> integerList = Arrays.asList(TARGET_INTEGERS);
 		Collections.shuffle(integerList);
 		List<Integer> slicedList = integerList.subList(0, 3);
 		
-		String generatedNumber = "";
-		
-		for(Object i : slicedList) {
-			generatedNumber += i.toString();			
-		}
-		
-		return Integer.parseInt(generatedNumber);
+		return slicedList;
 	}
-	
+	private static List<Integer> getUserNumber() {
+		final Scanner scanner = new Scanner(System.in);
+	}
 
 }

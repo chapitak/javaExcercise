@@ -5,9 +5,14 @@ generateComputerNumber()
 getUserNumber()
 - scanner로 받기
 - 예외처리
+- 세 자리 정수 받음. 
+예외처리
+1. 숫자가 아닐 때
+2. 세 자리가 아닐 때
+-> 두 경우를 한 번에 묶을 수도 있음.  
 
 compareTwoNumbers(ComputerNumber, UserNumber)
 - 여기서 응답도 출력해준다. 
-
+- index가 같으면 스트라이크고, 아니면 볼로 연산하면 될 듯. 
 
 반복되는 부분은 loop으로 처리한다. 
